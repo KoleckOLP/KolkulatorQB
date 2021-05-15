@@ -19,7 +19,7 @@ DO
         INPUT y
         z = x + y
         PRINT x; "+"; y; "="; z
-        SLEEP 60
+        PAKTC
     ELSEIF choice = 2 THEN
         PRINT "choose first number"
         INPUT x
@@ -27,7 +27,7 @@ DO
         INPUT y
         z = x - y
         PRINT x; "-"; y; "="; z
-        SLEEP 60
+        PAKTC
     ELSEIF choice = 3 THEN
         PRINT "choose first number"
         INPUT x
@@ -35,7 +35,7 @@ DO
         INPUT y
         z = x * y
         PRINT x; "*"; y; "="; z
-        SLEEP 60
+        PAKTC
     ELSEIF choice = 4 THEN
         PRINT "choose first number"
         INPUT x
@@ -43,25 +43,31 @@ DO
         INPUT y
         z = x / y
         PRINT x; "/"; y; "="; z
-        SLEEP 60
+        PAKTC
     ELSEIF choice = 5 THEN
         PRINT "choose number"
         INPUT x
         z = x * x
         PRINT x; "^2"; "="; z
-        SLEEP 60
+        PAKTC
     ELSEIF choice = 6 THEN
         PRINT "choose number"
         INPUT x
         y = x * x
         z = y * x
         PRINT x; "^3"; "="; z
-        SLEEP 60
+        PAKTC
     ELSEIF choice = 7 THEN GOTO quit
     ELSE
         PRINT "choice is only 1-7"
-        SLEEP 60
+        PAKTC
     END IF
 LOOP
+
 quit:
 END
+
+SUB PAKTC
+    PRINT "Press any key to continue..."
+    INPUT temp
+END SUB
