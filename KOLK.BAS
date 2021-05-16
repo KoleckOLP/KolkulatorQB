@@ -15,18 +15,8 @@ DO
     IF choice = 1 OR choice = 2 OR choice = 3 OR choice = 4 THEN
         INP2M(choice)
         PAKTC
-    ELSEIF choice = 5 THEN
-        PRINT "choose number"
-        INPUT x
-        z = x * x
-        PRINT x; "^2"; "="; z
-        PAKTC
-    ELSEIF choice = 6 THEN
-        PRINT "choose number"
-        INPUT x
-        y = x * x
-        z = y * x
-        PRINT x; "^3"; "="; z
+    ELSEIF choice = 5 OR choice = 6 THEN
+        INP1M(choice)
         PAKTC
     ELSEIF choice = 7 THEN GOTO quit
     ELSE
@@ -55,6 +45,19 @@ SUB INP2M (cho)
     ELSEIF cho = 4 THEN
         z = x * y
         PRINT x; "*"; y; "="; z
+    END IF
+END SUB
+
+SUB INP1M (cho)
+    PRINT "choose number"
+    INPUT x
+    IF cho = 5 THEN
+        y = x * x
+        PRINT x; "^2"; "="; x
+    ELSEIF cho = 6 THEN
+        y = x * x
+        z = y * x
+        PRINT x; "^3"; "="; z
     END IF
 END SUB
 
