@@ -1,14 +1,14 @@
 DO
     CLS
-    PRINT "kolkulatorQB"
+    PRINT "KolkulatorQB"
     PRINT
-    PRINT "1. adition"
-    PRINT "2. subtraction"
-    PRINT "3. multiplication"
-    PRINT "4. division"
-    PRINT "5. to the power of 2"
-    PRINT "6. to the power of 3"
-    PRINT "7. quit"
+    PRINT "1. Adition"
+    PRINT "2. Subtraction"
+    PRINT "3. Multiplication"
+    PRINT "4. Division"
+    PRINT "5. Power of 2"
+    PRINT "6. Power of 3"
+    PRINT "7. Quit"
     PRINT
     PRINT "choose 1-7 and confirm with <Enter>"
     INPUT choice
@@ -59,6 +59,6 @@ SUB INP1M (cho)
 END SUB
 
 SUB PAKTC
-    PRINT "Press any key to continue..."
+    PRINT "press any key to continue..."
     INPUT temp
 END SUB
