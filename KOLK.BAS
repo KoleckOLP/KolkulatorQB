@@ -18,15 +18,12 @@ DO
     ELSEIF choice = 5 OR choice = 6 THEN
         INP1M(choice)
         PAKTC
-    ELSEIF choice = 7 THEN GOTO quit
+    ELSEIF choice = 7 THEN END
     ELSE
         PRINT "choice is only 1-7"
         PAKTC
     END IF
 LOOP
-
-quit:
-END
 
 SUB INP2M (cho)
     PRINT "choose first number"
